@@ -1,0 +1,83 @@
+
+@main-color:#006699;
+
+img {
+    vertical-align: middle;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style:none;
+}
+a {
+    color: #666;
+}
+body {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: .14rem;
+    line-height: .14rem;
+    padding: .45rem 0 ;
+    height: 100vh;
+
+}
+
+// 头部区域
+#header {
+    display: flex;
+    text-align: center;
+    background-color: @main-color;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    .left {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+    .center {
+        flex: 1;
+        margin: 0;
+        line-height: .45rem;
+        color: #fff;
+        font-weight: normal;
+        input {
+            margin-bottom: 0;
+            background-color: #fff;
+            text-align: left;
+            color: #000;
+        }
+    }
+    .right {
+        width: .45rem;
+        height: .45rem;
+        line-height: .45rem;
+        color: #fff;
+    }
+}
+
+
+#footer {
+    height: .45rem;
+    background-color: @main-color;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 999;
+    /* 注意加宽度 已经没有默认宽度了 */
+    width: 100%;
+    a {
+        display: flex;
+        height: .45rem;
+        color: #fff;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
