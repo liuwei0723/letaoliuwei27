@@ -99,7 +99,7 @@ body {
 #main .category-left .mui-scroll ul li a:active {
   color: #666;
 }
-#main .category-left .mui-scroll ul.active a {
+#main .category-left .mui-scroll ul .active a {
   background-color: #ccc;
 }
 #main .category-right {
@@ -122,5 +122,5 @@ body {
   margin-bottom: .1rem;
 }
 #main .category-right .mui-row a img {
-  width: .6rem;
+  width: 0.8rem;
 }

@@ -115,14 +115,16 @@
     </script>
     <script id="secondCategoryTpl" type="text/html">
         <!-- 判断rows数组的长度 大于0 就进行遍历  小于0就提示没有数据了 -->
-        {{if rows.length > 0}} {{each rows value}}
+        {{if rows.length > 0}} 
+        {{each rows value}}
         <div class="mui-col-xs-4">
             <a href="#">
                 <img src="{{value.brandLogo}}" alt="">
                 <p>{{value.brandName}}</p>
             </a>
         </div>
-        {{/each}} {{else}}
+        {{/each}}
+         {{else}}
         <p>没有品牌了！请购买其他品牌</p>
         {{/if}}
     </script>

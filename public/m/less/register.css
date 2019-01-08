@@ -96,3 +96,19 @@ body {
   border-radius: 0 .06rem .06rem 0;
   font-size: .14rem;
 }
+#main {
+  background-color: #fff;
+}
+#main .mui-button-row:last-child {
+  padding: .1rem;
+  height: auto;
+}
+#main .get-vcode {
+  position: absolute;
+  right: 0;
+  top: .01rem;
+  width: auto;
+}
+#main .btn-register {
+  width: 100%;
+}

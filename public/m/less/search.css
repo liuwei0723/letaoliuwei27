@@ -16,7 +16,7 @@ body {
   margin: 0 auto;
   font-size: .14rem;
   line-height: .14rem;
-  padding: .45rem 0;
+  padding: .45rem 0 ;
   height: 100vh;
 }
 #header {
@@ -72,27 +72,13 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* 中间部分的主体样式 */
-#main {
-  /* 会在main里面添加一个区域滚动容器 MUI自带了绝对定位 可以main设置相对定位 让 mui-scroll-wrapper相对main去定位 */
-  position: relative;
-  /* 同时需要给main设置高度100% 让main在中间范围显示 继承body内容的高度 */
-  height: 100%;
-}
-.search-form form {
-  display: flex;
-  padding: .1rem;
-}
-.search-form form input {
-  flex: 1;
-  margin: 0;
-  text-align: left;
-  background-color: #fff;
-  border: 1px solid #0062cc;
-  border-radius: .06rem 0 0 .06rem;
+#main .search-history .mui-card .mui-card-header {
   font-size: .14rem;
 }
-.search-form form button {
-  border-radius: 0 .06rem .06rem 0;
-  font-size: .14rem;
+#main .search-history .mui-card .mui-card-content .mui-table-view-cell .mui-badge {
+  width: .24rem;
+  height: .24rem;
+  padding: 0.06rem;
+  text-align: center;
+  background-color: hotpink;
 }

@@ -1,0 +1,55 @@
+@import 'base.less';
+
+#main {
+    padding-top: .5rem;
+    // padding-bottom: .45rem;
+    
+    .search-form{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+        height: .55rem;
+    }
+    .product-list{
+        position: relative;
+        height: 100%;
+        .productlist{
+            .mui-card-header{
+                font-size: .14rem;
+                a{
+                    &.active{
+                        color: red;
+                    }
+                }
+            }
+            .mui-card-content{
+                font-size: .14rem;
+                a:active{
+                    color: #666;
+                }
+                .mui-row{
+                    .mui-col-xs-6{
+                        &:nth-child(odd){
+                            padding-right: .05rem;
+                        }
+                        &:nth-child(even){
+                            padding-left: .05rem;
+                        }
+                        a{
+                            display: block;
+                            text-align: center;
+                            padding-bottom: .1rem;
+                            box-shadow: 0 0 2px #ccc;
+                            img{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

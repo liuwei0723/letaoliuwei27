@@ -96,3 +96,74 @@ body {
   border-radius: 0 .06rem .06rem 0;
   font-size: .14rem;
 }
+body {
+  padding-bottom: 0.8rem;
+}
+#main {
+  background-color: #fff;
+}
+#main .cart-list .cart-product {
+  padding-bottom: 0;
+}
+#main .cart-list .cart-product.mui-active {
+  background-color: #fff;
+}
+#main .cart-list .cart-product .product-left img {
+  max-width: 0.8rem;
+  min-height: 0.8rem;
+}
+#main .cart-list .cart-product .product-left .mui-checkbox {
+  text-align: center;
+}
+#main .cart-list .cart-product .product-left .mui-checkbox input {
+  position: static;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+#main .cart-list .cart-product .product-left .mui-checkbox input::before {
+  font-size: 0.2rem;
+  color: hotpink;
+}
+#main .cart-list .cart-product .product-right > div {
+  padding: 0.05rem;
+  margin-bottom: .1rem;
+}
+#main .cart-list .cart-product .product-right .product-name {
+  /* 强制让文本换行或者不换行 normal自动 */
+  white-space: normal;
+  color: #666;
+  line-height: .2rem;
+  font-size: .14rem;
+  margin-bottom: .05rem;
+}
+#main .cart-list .cart-product .product-right .product-price span {
+  font-weight: 600;
+  color: red;
+}
+#main .cart-list .cart-product .product-right .product-price del {
+  color: #888;
+}
+#main .cart-list .cart-product .product-right .product-params {
+  display: flex;
+  justify-content: space-between;
+}
+#main .mui-block {
+  visibility: visible !important;
+}
+/* 设置订单的样式 */
+#order {
+  position: fixed;
+  bottom: 0.45rem;
+  left: 0;
+  width: 100%;
+  height: 0.35rem;
+  display: flex;
+  justify-content: space-between;
+  line-height: 0.35rem;
+  border-top: 0.01rem solid #ccc;
+}
+#order .order-total {
+  padding-left: 0.2rem;
+  color: red;
+  font-weight: 600;
+}

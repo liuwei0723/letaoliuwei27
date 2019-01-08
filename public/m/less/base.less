@@ -1,6 +1,4 @@
-
-@main-color:#006699;
-
+@main-color: #006699;
 img {
     vertical-align: middle;
 }
@@ -9,20 +7,22 @@ img {
     padding: 0;
     margin: 0;
 }
+
 li {
-    list-style:none;
+    list-style: none;
 }
+
 a {
     color: #666;
 }
+
 body {
     max-width: 750px;
     margin: 0 auto;
     font-size: .14rem;
     line-height: .14rem;
-    padding: .45rem 0 ;
+    padding: .45rem 0;
     height: 100vh;
-
 }
 
 // 头部区域
@@ -62,7 +62,6 @@ body {
     }
 }
 
-
 #footer {
     height: .45rem;
     background-color: @main-color;
@@ -79,5 +78,35 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+/* 中间部分的主体样式 */
+
+#main {
+    /* 会在main里面添加一个区域滚动容器 MUI自带了绝对定位 可以main设置相对定位 让 mui-scroll-wrapper相对main去定位 */
+    position: relative;
+    /* 同时需要给main设置高度100% 让main在中间范围显示 继承body内容的高度 */
+    height: 100%;
+}
+// 搜索表单的公共样式
+.search-form {
+    
+    form {
+        display: flex;
+        padding: .1rem;
+        
+        input {
+            flex: 1;
+            margin: 0;
+            text-align: left;
+            background-color: #fff;
+            border: 1px solid #0062cc;
+            border-radius: .06rem 0 0 .06rem;
+            font-size: .14rem;
+        }
+        button {
+            border-radius: 0 .06rem .06rem 0;
+            font-size: .14rem;
+        }
     }
 }

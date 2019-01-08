@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
 </head>
+
 <body>
-	项目根目录的首页
+
 </body>
+
 </html>
+<script>
+	var data = {
+		list: ["苹果", "香蕉"]
+	};
+	localStorage.setItem("data", data);
+	var getList = localStorage.getItem("data");
+	console.log(getList.list[0])
+</script>

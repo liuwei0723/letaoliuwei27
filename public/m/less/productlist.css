@@ -96,3 +96,45 @@ body {
   border-radius: 0 .06rem .06rem 0;
   font-size: .14rem;
 }
+#main {
+  padding-top: .5rem;
+}
+#main .search-form {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  height: .55rem;
+}
+#main .product-list {
+  position: relative;
+  height: 100%;
+}
+#main .product-list .productlist .mui-card-header {
+  font-size: .14rem;
+}
+#main .product-list .productlist .mui-card-header a.active {
+  color: red;
+}
+#main .product-list .productlist .mui-card-content {
+  font-size: .14rem;
+}
+#main .product-list .productlist .mui-card-content a:active {
+  color: #666;
+}
+#main .product-list .productlist .mui-card-content .mui-row .mui-col-xs-6:nth-child(odd) {
+  padding-right: .05rem;
+}
+#main .product-list .productlist .mui-card-content .mui-row .mui-col-xs-6:nth-child(even) {
+  padding-left: .05rem;
+}
+#main .product-list .productlist .mui-card-content .mui-row .mui-col-xs-6 a {
+  display: block;
+  text-align: center;
+  padding-bottom: .1rem;
+  box-shadow: 0 0 2px #ccc;
+}
+#main .product-list .productlist .mui-card-content .mui-row .mui-col-xs-6 a img {
+  width: 100%;
+}

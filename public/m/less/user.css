@@ -96,3 +96,16 @@ body {
   border-radius: 0 .06rem .06rem 0;
   font-size: .14rem;
 }
+#main .mui-table-view p {
+  margin-bottom: .1rem;
+}
+#main .mui-table-view a {
+  line-height: .2rem;
+}
+#main .btn-exit {
+  width: 100%;
+}
+#main .btn-exit:active {
+  background-color: hotpink;
+  color: #fff;
+}

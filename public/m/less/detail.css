@@ -96,3 +96,52 @@ body {
   border-radius: 0 .06rem .06rem 0;
   font-size: .14rem;
 }
+#main {
+  background-color: #fff;
+}
+#main #slide {
+  height: 3.5rem;
+}
+#main #slide img {
+  height: 3.5rem;
+}
+#main #productInfo > div {
+  padding: .1rem;
+  border-bottom: 0.01rem solid #ccc;
+  /* 注意已经div了 写交集选择器 不能漏了& 不然就是后代了 */
+}
+#main #productInfo > div.product-name span {
+  font-weight: 600;
+}
+#main #productInfo > div.product-price span {
+  color: red;
+  font-weight: 600;
+}
+#main #productInfo > div.product-price del {
+  color: #888;
+}
+#main #productInfo > div.product-size {
+  /* 因为按钮有5px margin-bottom 所以单独让 当前商品大小盒子 底部padding变成5px 加起来刚好是10px */
+  padding: 0.1rem 0.1rem 0.05rem;
+}
+#main #productInfo > div.product-size > button {
+  margin-bottom: 0.05rem;
+  /* 注意按钮的对齐方式默认是top  文字和按钮顶部对齐 
+					把按钮的对齐方式设置为 middle 中线对齐和文字就居中对齐了 */
+  vertical-align: middle;
+}
+/* 对详情页面的底部样式单独覆盖 */
+#footer {
+  background-color: #ccc;
+}
+#footer .mui-row > div {
+  padding: 0.05rem;
+}
+#footer .mui-row > div .fa-shopping-cart {
+  font-size: 0.2rem;
+  color: #333;
+}
+#footer .mui-row > div button {
+  width: 100%;
+  font-size: .14rem;
+}

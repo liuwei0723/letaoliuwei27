@@ -152,4 +152,6 @@ Letao.prototype = {
         var that = this;
         localStorage.setItem(that.key, JSON.stringify(that.historyData));
     }
+
+    
 }
